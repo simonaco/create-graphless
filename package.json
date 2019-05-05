@@ -24,6 +24,15 @@
   ],
   "author": "Simona Cotin",
   "license": "MIT",
+  "homepage": "https://github.com/simonaco/create-graphless#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simonaco/create-graphless"
+  },
+  "bugs": {
+    "url": "https://github.com/simonaco/create-graphless/issues",
+    "email": "simona.cotin@gmail.com"
+  },
   "dependencies": {
     "arg": "^4.1.0",
     "chalk": "^2.4.2",
