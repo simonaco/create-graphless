@@ -1,7 +1,7 @@
 {
   "name": "@simonaco/create-graphless",
-  "version": "1.0.0",
-  "description": "A CLI to bootstrap my new serverless graphql projects",
+  "version": "1.0.1",
+  "description": "A CLI to bootstrap new serverless graphql projects",
   "main": "src/index.js",
   "bin": {
     "@simonaco/create-graphless": "bin/create-graphless",
