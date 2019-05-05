@@ -1,0 +1,37 @@
+{
+  "name": "@simonaco/create-graphless",
+  "version": "1.0.0",
+  "description": "A CLI to bootstrap my new serverless graphql projects",
+  "main": "src/index.js",
+  "bin": {
+    "@simonaco/create-graphless": "bin/create-graphless",
+    "create-graphless": "bin/create-graphless"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "cli",
+    "create-graphless"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "templates/"
+  ],
+  "author": "Simona Cotin",
+  "license": "MIT",
+  "dependencies": {
+    "arg": "^4.1.0",
+    "chalk": "^2.4.2",
+    "esm": "^3.2.22",
+    "execa": "^1.0.0",
+    "inquirer": "^6.3.1",
+    "listr": "^0.14.3",
+    "ncp": "^2.0.0",
+    "pkg-install": "^1.0.0"
+  }
+}
