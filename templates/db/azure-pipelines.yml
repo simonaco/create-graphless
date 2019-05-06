@@ -1,0 +1,27 @@
+pool:
+  vmImage: 'Ubuntu 16.04'
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: "8.x"
+    displayName: "Installing Node.js"
+  - task: Npm@1
+    inputs:
+      command: "install"
+  - task: ArchiveFiles@2
+    displayName: 'Archive files'
+    inputs:
+      rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+      includeRootFolder: false
+      archiveFile: '$(System.DefaultWorkingDirectory)/$(Build.BuildId).zip'
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish files'
+    inputs:
+      PathtoPublish: '$(System.DefaultWorkingDirectory)'
+      name: 'drop'
+  - task: AzureRmWebAppDeployment@4
+    displayName: 'Deploy Azure App Service'
+    inputs:
+      azureSubscription: '$(Parameters.ConnectedServiceName)'
+      appType: 'functionapp'
+      WebAppName: '$(Parameters.WebAppName)'

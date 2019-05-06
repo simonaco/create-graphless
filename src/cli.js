@@ -20,6 +20,7 @@ function parseArgumentsIntoOptions(rawArgs) {
     git: args['--git'] || false,
     template: args._[0],
     runInstall: args['--install'] || false,
+    addDatabase: args['--db'] || false,
   }
 }
 
@@ -38,7 +39,7 @@ async function promptForMissingOptions(options) {
       type: 'list',
       name: 'template',
       message: 'Please choose which project template to use',
-      choices: ['JavaScript', 'TypeScript'],
+      choices: ['JavaScript', 'db'],
       default: defaultTemplate,
     })
   }
