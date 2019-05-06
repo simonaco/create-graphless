@@ -91,3 +91,5 @@ out
 bin
 obj
 appsettings.json
+
+local.settings.json
