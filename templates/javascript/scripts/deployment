@@ -1,6 +1,6 @@
 #!/bin/bash
 APP_NAME=$1
-REPO_URL=https://github.com/simonaco/graphless
+REPO_URL=https://github.com/simonaco/graphless-hello
 
 # create resource group
 az group create --location westus --name $APP_NAME
