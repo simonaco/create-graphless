@@ -6,9 +6,9 @@ CLI that generates the code you need for running Graphql with Azure Functions
 
 1. A recent version of [Node](https://nodejs.org/en/download) (8+)
 
-1. [Azure Functions CLI](https://docs.microsoft.com/azure/azure-functions/functions-run-local?WT.mc_id=graphqless-github-sicotin)
+1. [Azure Functions CLI](https://docs.microsoft.com/azure/azure-functions/functions-run-local?WT.mc_id=startup-0000-sicotin)
 
-1. [Free Azure Account](https://azure.microsoft.com/en-us/free/?wt.mc_id=graphless-github-sicotin)
+1. [Free Azure Account](https://azure.microsoft.com/free/?WT.mc_id=startup-0000-sicotin)
 
 ## How to run it
 
